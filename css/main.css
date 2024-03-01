@@ -48,14 +48,23 @@ body{
 }
 
 .progress{
-    border: 3px solid rgb(126, 200, 225);
     position: absolute;
     transition: 0.4s ease;
-    background-color: rgb(126, 200, 225);
+    background: lightgrey;
     transform: translateY(-50%);
     z-index: -1;
     width: 100%;
+    height: 4px;
     
+}
+
+#progress-bar {
+    position: absolute;
+    height: 4px;
+    width: 0%;
+    background: rgb(126, 200, 225);
+    transition: all 300ms ease;
+    z-index: 1000;
 }
 
 .box-btn{
